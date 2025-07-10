@@ -9,6 +9,7 @@ terraform {
 provider "local" {
   # Configuration options
 }
+
 data "local_file" "readme" {
   filename = "${path.module}/README.md"
 }
