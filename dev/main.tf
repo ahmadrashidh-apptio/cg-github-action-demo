@@ -26,7 +26,3 @@ resource "null_resource" "toggle_trigger" {
     command = "echo Trigger flag is ${var.trigger_flag}"
   }
 }
-
-data "local_file" "readme" {
-  filename = "${path.module}/../README.md"
-}
