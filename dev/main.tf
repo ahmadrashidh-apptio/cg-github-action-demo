@@ -19,10 +19,10 @@ provider "local" {
 
 resource "null_resource" "toggle_trigger" {
   triggers = {
-    flag = var.trigger_flag
+    timestamp = timestamp() # This changes every run
   }
 
   provisioner "local-exec" {
-    command = "echo Trigger flag is ${var.trigger_flag}"
+    command = "echo Triggered at ${timestamp()}"
   }
 }
