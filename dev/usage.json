@@ -1,17 +1,15 @@
 {
     "resource_usage": {
-        "resource_usage": {
-            "aws_cloudwatch_metric_alarm.metrics_insights_alarm": {
-                "avg_metrics_retrieved": 100
-            },
-            "aws_s3_bucket.governance-test": {
-                "standard_storage": {
-                    "storage_gb": 500,
-                    "rw_requests": 10000,
-                    "ro_requests": 1000000
-                }
-            }
+        "aws_cloudwatch_metric_alarm.metrics_insights_alarm": {
+            "avg_metrics_retrieved": 100
         },
-        "version": "0.1"
-    }
+        "aws_s3_bucket.governance-test": {
+            "standard_storage": {
+                "storage_gb": 500,
+                "rw_requests": 10000,
+                "ro_requests": 1000000
+            }
+        }
+    },
+    "version": "0.1"
 }
