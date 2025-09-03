@@ -14,6 +14,7 @@ variable "trigger_flag" {
 
 provider "local" {
   # Configuration options
+  # changes changes
 }
 
 resource "null_resource" "toggle_trigger" {
