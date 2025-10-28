@@ -13,7 +13,7 @@ variable "trigger_flag" {
 }
 
 provider "local" {
- # hello 10
+ # hello 11
 }
 
 resource "null_resource" "toggle_trigger" {
