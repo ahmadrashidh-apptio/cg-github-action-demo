@@ -15,7 +15,7 @@ provider "aws" {
 resource "aws_efs_file_system" "efs_example" {
 
   throughput_mode                 = "provisioned"
-  provisioned_throughput_in_mibps = 4
+  provisioned_throughput_in_mibps = 5
   availability_zone_name = "us-east-1"
 
 
