@@ -1,6 +1,6 @@
 {
     "resource_usage": {
-        "aws_efs_file_system": {
+        "aws_efs_file_system.efs_example": {
             "storage_gb": 100,
             "standard_storage_reads_gb": 10000,
             "standard_storage_writes_gb": 100,
