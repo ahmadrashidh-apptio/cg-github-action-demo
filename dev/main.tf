@@ -7,22 +7,16 @@ terraform {
   }
 }
 
-variable "trigger_flag" {
-  type    = bool
-  default = false
+provider "aws" {
+  region  = "us-west-2"
+  profile = "default"
 }
 
-provider "local" {
-  # Configuration options
-  # changes changes
-}
+resource "aws_efs_file_system" "efs_example" {
 
-resource "null_resource" "toggle_trigger" {
-  triggers = {
-    timestamp = timestamp() # This changes every run
-  }
+  throughput_mode                 = "provisioned"
+  provisioned_throughput_in_mibps = 5
+  availability_zone_name = "us-east-1"
 
-  provisioner "local-exec" {
-    command = "echo Triggered at ${timestamp()}"
-  }
+
 }

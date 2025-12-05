@@ -1,14 +1,15 @@
 {
     "resource_usage": {
-        "aws_cloudwatch_metric_alarm.metrics_insights_alarm": {
-            "avg_metrics_retrieved": 100
-        },
-        "aws_s3_bucket.governance-test": {
-            "standard_storage": {
-                "storage_gb": 500,
-                "rw_requests": 10000,
-                "ro_requests": 1000000
-            }
+        "aws_efs_file_system.efs_example": {
+            "storage_gb": 100,
+            "standard_storage_reads_gb": 10000,
+            "standard_storage_writes_gb": 100,
+            "ia_storage_percent": 15,
+            "ia_tiering_gb": 10,
+            "ia_reads_gb": 20,
+            "archive_storage_percent": 80,
+            "archive_tiering_gb": 5,
+            "archive_reads_gb": 5
         }
     },
     "version": "0.1"
